@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anti-Procrastination Trainer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="title_Div">
+            <h1 class="menu_title1 menu_Title2">Anti-Procrastination Trainer</h1>
+            </div>
+            <label>Enabled</label>
+            <input type="checkbox" id="enabled" />
+            <br/>
+            <p id="notice">Please Note:<br/> Refresh and leave/return to the page if settings are not taking effect.</p>
+            <p> Blocked Websites:</p>
+            <textarea id="websites" rows="10" cols="30">facebook.com</textarea>
+            <br/><br/>
+            <div style="clear:both;"></div>
+            <p>Timer in Seconds:</p>
+            <input type="number" id="timer_duration" value="5" />
+            <br/><br/>
+            <!--Save Button-->
+            <button id = "save_params">Save Settings</button>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

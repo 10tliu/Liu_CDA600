@@ -1,0 +1,58 @@
+#title_Div {
+    background-color: rgb(0, 0, 0,);
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.menu_Title1 {
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+.menu_Title2 {
+    /*background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);*/
+    background: linear-gradient(to right, #ffff00, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 2s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+#timer_duration {
+    width: 100px;
+}
+
+#wrapper {
+    font-weight: bold;
+}
+
+#notice {
+    font-weight: normal;
+    text-align: center;
+}
+
+#save_params {
+    font-weight: bold;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+

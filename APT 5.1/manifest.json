@@ -1,0 +1,37 @@
+{
+
+    "manifest_version": 2,
+    "name": "Anti-Procrastination Trainer",
+    "version": "5.2",
+
+    "description": "Website softblocker to help train users to stay on task without resorting to full site restrictions.",
+
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_title": "Anti-Procrastination Trainer",
+        "default_icon": "icons/icon128.png",
+        "default_popup": "popup/content.html"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["jquery.min.js", "main.js"]
+        }
+    ]
+}
